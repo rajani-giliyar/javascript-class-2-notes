@@ -1,0 +1,148 @@
+<!-- SYNTAX FOR TIMER FUNCTION -->
+     <!-- setTimeout -->
+
+<!--
+
+ setTimeout(function()
+{
+    Task
+},second)
+
+ -->
+
+
+         <!-- setInterval -->
+
+<!-- 
+    
+setInterval(function()
+{
+    Task
+},second)
+
+-->
+
+
+<!-- requestAnimationFrame -->
+
+<!-- function fname()
+{
+    task
+    requestAnimationFrame(fname)
+}
+requestAnimationFrame(fname) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Timer Function</title>
+    <style>
+    input
+    {
+        width:500px;
+        height: 50px;
+    }
+    button
+        {
+             padding: 17px 30px;            
+        }
+
+    .message
+    {
+        width: 20%;
+        background-color: yellowgreen;
+        /* height: 100px; */
+        position: fixed;
+        right:-30%;
+        top:90vh;
+        padding: 20px;
+        font-family:'Segoe UI';
+        transform: .3s;
+    }
+
+    .ball
+    {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        border-radius: 50%;
+        transition: .3s;
+    }
+    </style>
+</head>
+<body>
+
+    <input type="text" placeholder="Enter Name" id="name">
+    <button onclick="validateInput()">Submit</button>
+    <div class="message" id="message">
+    </div>
+    <div class="ball" id="ball"></div>
+
+    <script>
+
+        // setTimeout...it performs only once at a time
+        // clearTimeout to stop settimeout
+
+
+    //      setTimeout(function(){
+    //         console.log("after given second it start to execute.Here i gave five second")
+    //      },5000)
+
+    //    function validateInput()
+    //    {
+    //         if(document.getElementById("name").value==="")
+    //         {
+    //             document.getElementById("message").innerText="Name Is Required";
+    //             document.getElementById("message").style.right="0%";
+    //             setTimeout(function()
+    //             {
+    //                 document.getElementById("message").style.right="-30%";
+    //             },5000)
+    //         }
+    //    }
+
+
+    // setInterval
+  
+
+    // let margin=0;
+    // let perce=((11.9/100)*window.innerWidth);
+    // document.getElementById("ball").style.width=perce+"px"
+    // document.getElementById("ball").style.height=perce+"px"
+    // let move=setInterval(function()
+    // {
+    //     if(margin<(window.innerWidth-perce)){
+    //     // if(margin<=1000){
+    //         margin+=perce;
+    //     document.getElementById("ball").style.marginLeft=margin+"px";
+    //     }
+    //     else{
+    //         clearInterval(move);
+    //         // to stop going out from the screen we use clearinterval.
+    //     }
+        
+    // },1000)
+
+    // window.innerwidth is used to calculate the width of the window
+
+
+    // 100 is fast,10 is more fast
+
+    // setInterval(function()
+    // {
+    //     document.getElementById("ball").style.marginLeft="20px";
+    // },1000).in this margin moves right only once at time.because we didnt give an increment.
+
+    // Request Animation Frame..use this for Animation..it works on recurssion logic
+    
+
+
+
+    // Without using loop is it possible to print hello world 10 times..yrs we can watch timer function..1hour 02second saurabh sir
+
+
+    </script>
+    
+</body>
+</html>

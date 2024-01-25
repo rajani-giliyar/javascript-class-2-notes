@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    input
+        {
+            width:500px;
+            height: 50px;
+        }
+        button
+            {
+                 padding: 17px 30px;            
+            }
+    
+        .message
+        {
+            width: 20%;
+            background-color: yellowgreen;
+            height: 100px;
+            position: fixed;
+            right:-30%;
+            top:90vh;
+            padding: 20px;
+            font-family:'Segoe UI';
+            transform: .3s;
+        }
+    
+
+
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter Name" id="name">
+    <button onclick="validateInput()">Submit</button>
+    <div class="message" id="message">
+    </div>
+    <script>
+
+function validateInput()
+       {
+            if(document.getElementById("name").value==="")
+            {
+                document.getElementById("message").innerText="Name Is Required";
+                document.getElementById("message").style.right="0%";
+                // setTimeout(function()
+                // {
+                //     document.getElementById("message").style.right="-30%";
+                // },5000)
+            }
+       }
+        
+    </script>
+</body>
+</html>

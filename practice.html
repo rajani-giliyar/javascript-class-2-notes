@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a javascript programm to check 2 numbers and return true if one of the number is 100 or if the sum of the two numbers is 100
+        let a=45;
+        let b=55;
+        if(a===100 || b===100 || a+b===100)
+        {
+            console.log("true");
+        }
+        else
+        {
+            console.log("false");
+        }
+
+        // ---------------------------------------------------------
+
+        // let num=972;
+        // if(num%2==0)
+        // {
+        //     console.log("given number is even");
+        // }
+        // else
+        // {
+        //     console.log(" given number is odd");
+        // }
+
+        // ARMSTRONG NUMBER
+
+        let num=2467805145;
+        let copynum=num;
+        let sum=0;
+        let count=0;
+        let countnum=num;
+
+        while(countnum!=0)
+        {
+            countnum=parseInt(countnum/10);
+            count++
+        }
+
+         while(num!=0)
+         {
+             let rem=num%10;
+             num=parseInt(num/10);
+             sum=sum+(rem**count);
+         }
+         if(sum===copynum)
+         {
+            console.log("IT IS A ARMSTRONG NUMBER");
+         }
+         else
+         {
+             console.log(" IT IS NOT A ARMSTRONG NUMBER ");
+         }
+
+
+        //  CREATE A ARRAY OF 10 NUMBERS AND PRINT THE SUM OF ALL THE NUMBERS USING LOOP
+
+
+        //  let arr=[1,2,3,4,5,6,7,8,9,10];
+        //  let i=0;
+        //  let summ=0;
+        //  while(i<arr.length)
+        //  {
+        //     // console.log(arr[i]);
+        //     summ=summ+arr[i];
+        //     i++
+        //  }
+        //  console.log(summ);
+
+        // CREATE A ARRAY AND PRINT ONLY THE NUMBER WHICH ARE DIVISIBLE BY 3
+       
+        // let arr=[13,6,9,34,51,99,44,33,45,76,209,2345,6543];
+        //  for(let i=0;i<arr.length;i++)
+        // {    
+        //     if(arr[i]%3==0)
+        //     {
+        //         console.log(arr[i]+" is multiple of 3");
+            
+        //     }
+        //     else
+        //     {
+        //         console.log(arr[i]+" is not multiple of 3");
+                
+        //     }
+            
+        // }
+
+        let arr=[3,4,6,7,9,12,34,234,655,456,76543];
+        let i=0;
+        while(i<arr.length)
+        {
+            if(arr[i]%3==0)
+          {
+                 console.log(arr[i]+" is multiple of 3");
+            
+          }
+         else
+             {
+                 console.log(arr[i]+" is not multiple of 3");
+                
+             } 
+             i++;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manipulating CSS && Attributes</title>
+    <style>
+
+        *
+        {
+            margin:0px;
+            padding:0px;
+        }
+
+        #one
+        {
+            height:140px;
+            width:140px;
+            background-color:yellowgreen;
+            transition: 0.6s;
+        }
+
+        .btn
+        {
+            margin: 30px;
+            padding:10px 10px;
+        }
+
+        .inp
+        {
+            padding: 10px;
+        }
+         
+    </style>
+</head>
+<body>
+    <!-- <div id="one"> -->
+          <!-- <h1>hwllo</h1> -->
+    <!-- </div> -->
+    <!-- <button class="btn" onclick="change_element()">change element</button> -->
+
+    
+    <div id="one">
+          <h3>Previous</h3>
+    </div>
+    <button class="btn" onclick="addelement()">change element</button>
+
+    <input class="inp" type="password" placeholder="enter password">
+    <button class="btn" onmousedown="showPassword()" onmouseout="hidePassword()" onmouseup="hidePassword()">ShowPassword</button>
+     
+    <script src="./dom_man_2.js"></script>
+</body>
+</html>

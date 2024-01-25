@@ -1,0 +1,141 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Recall</title>
+    <style>
+       .shownhide
+       {
+            width:25%;
+            height:50px;
+            background-color: brown;
+            position: fixed;
+            right:-30%;       
+            
+       }
+
+     
+
+
+
+
+
+
+
+
+
+
+
+        /* *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        div
+        {
+              height: 100px;
+              width: 100px;
+              background-color: aqua;
+        }
+
+        button
+        {
+            padding: 10px;
+            margin: 10px;
+        } */
+
+       
+    </style>
+  </head>
+  <body>
+       <input type="text" placeholder="enter name" id="inp">
+       <button onclick="subForm()" class="btn">submit</button>
+
+       <div id="shownhide" class="shownhide"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div>previous</div>
+    <button    onclick="fname11()">Click Me</button>
+
+    <input  id="inp" type="password" placeholder="enter password">
+    <button onmousedown="showpassword()" onmouseout="hidepassword()" onmouseup="hidepassword()" id="btn">Show password</button> -->
+
+
+   
+
+    <script>
+
+         function subForm()
+         {
+            if(document.getElementById("inp").value==="")
+            {
+                   document.getElementById("shownhide").style.right="0%"
+            }
+            else
+            {
+                document.getElementById("shownhide").style.right="-30%"
+            }
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+    // function fname()
+    // {
+    //     console.log("you got me")
+    // }
+
+    // function fname11()
+    // {
+    //     let d=document.getElementsByTagName("div")
+    //     d[0].innerHTML+="<h1>hello</h1>";
+    //     d[0].style.width="400px";
+    //     d[0].style.backgroundColor="yellow";
+    // }
+
+    // function showpassword()
+    // {
+    //     let inp=document.getElementById("inp");
+    //     inp.type="text";
+    // }
+    // function hidepassword()
+    // {
+    //     let inp=document.getElementById("inp");
+    //     inp.type="password";
+    // }
+
+
+   
+
+    </script>
+    
+  </body>
+  </html>
